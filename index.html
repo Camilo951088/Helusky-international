@@ -4,37 +4,152 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HELUSKY INTERNATIONAL</title>
-    <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 10%;
+            background-color: white;
+            border-bottom: 1px solid #e5e7eb;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav .logo {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: #1e3a8a;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #374151;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #1e3a8a;
+        }
+
+        header.hero {
+            background: linear-gradient(to right, #e0f2fe, #f9fafb);
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            color: #1e3a8a;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #334155;
+        }
+
+        section {
+            padding: 4rem 2rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #1e3a8a;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: box-shadow 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        ul.temas {
+            padding-left: 1.5rem;
+        }
+
+        ul.temas li {
+            margin-bottom: 0.75rem;
+        }
+
+        footer {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
+
+    <nav>
+        <div class="logo">HELUSKY</div>
+        <ul>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#tematicas">Temáticas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
     <header class="hero">
-        <nav>
-            <div class="logo">HELUSKY</div>
-            <ul>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#tematicas">Temáticas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="hero-content">
-            <h1>HELUSKY INTERNATIONAL</h1>
-            <p>Consultoría global. Estrategia inteligente. Transformación digital.</p>
-        </div>
+        <h1>HELUSKY INTERNATIONAL</h1>
+        <p>Consultoría global. Estrategia inteligente. Transformación digital.</p>
     </header>
 
-    <section id="nosotros" class="section">
+    <section id="nosotros">
         <div class="container">
             <h2>Sobre Nosotros</h2>
             <p>En HELUSKY INTERNATIONAL ofrecemos soluciones integrales de consultoría, formación y desarrollo empresarial con un enfoque estratégico en negocios internacionales y comercio exterior. Nuestra misión es brindar acompañamiento experto a empresas, pymes, profesionales y estudiantes que buscan ampliar su visión global, optimizar sus operaciones y fortalecer su competitividad en mercados internacionales.</p>
         </div>
     </section>
 
-    <section id="servicios" class="section alt">
+    <section id="servicios" style="background-color:#f1f5f9;">
         <div class="container">
             <h2>Servicios</h2>
-            <div class="grid">
+            <div class="card-grid">
                 <div class="card">Consultoría y asesoría especializada</div>
                 <div class="card">Charlas y conferencias inspiradoras</div>
                 <div class="card">Masterclasses personalizadas</div>
@@ -43,10 +158,10 @@
         </div>
     </section>
 
-    <section id="tematicas" class="section">
+    <section id="tematicas">
         <div class="container">
             <h2>Temáticas Clave</h2>
-            <ul class="topics">
+            <ul class="temas">
                 <li>Estrategia y gestión de negocios internacionales</li>
                 <li>Comercio exterior para pymes y grandes empresas</li>
                 <li>Logística internacional, cadena de suministro y gestión de contenedores</li>
@@ -62,15 +177,9 @@
         </div>
     </section>
 
-    <section id="contacto" class="section alt">
-        <div class="container">
-            <h2>Contacto</h2>
-            <p>¿Tienes un proyecto en mente? Muy pronto podrás contactarnos desde aquí.</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 HELUSKY INTERNATIONAL</p>
+    <footer id="contacto">
+        <p>&copy; 2025 HELUSKY INTERNATIONAL. Todos los derechos reservados.</p>
     </footer>
+
 </body>
 </html>
