@@ -31,10 +31,8 @@
             z-index: 10;
         }
 
-        nav .logo {
-            font-weight: 700;
-            font-size: 1.3rem;
-            color: #1e3a8a;
+        nav .logo img {
+            height: 48px;
         }
 
         nav ul {
@@ -87,8 +85,9 @@
         }
 
         .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 1.5rem;
         }
 
@@ -97,6 +96,10 @@
             border: 1px solid #e5e7eb;
             border-radius: 12px;
             padding: 1.5rem;
+            width: 260px;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
             box-shadow: 0 4px 10px rgba(0,0,0,0.05);
             transition: box-shadow 0.3s;
         }
@@ -125,7 +128,9 @@
 <body>
 
     <nav>
-        <div class="logo">HELUSKY</div>
+        <div class="logo">
+            <img src="logo.png" alt="HELUSKY Logo">
+        </div>
         <ul>
             <li><a href="#nosotros">Nosotros</a></li>
             <li><a href="#servicios">Servicios</a></li>
