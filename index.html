@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HELUSKY INTERNATIONAL</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
     <header class="hero">
-        <div class="container">
-            <img src="logo.png" alt="HELUSKY Logo" class="logo">
+        <nav>
+            <div class="logo">HELUSKY</div>
+            <ul>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#tematicas">Temáticas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
             <h1>HELUSKY INTERNATIONAL</h1>
-            <p>Soluciones estratégicas en negocios internacionales, comercio exterior y transformación digital.</p>
+            <p>Consultoría global. Estrategia inteligente. Transformación digital.</p>
         </div>
     </header>
 
-    <section class="sobre-nosotros">
+    <section id="nosotros" class="section">
         <div class="container">
             <h2>Sobre Nosotros</h2>
             <p>En HELUSKY INTERNATIONAL ofrecemos soluciones integrales de consultoría, formación y desarrollo empresarial con un enfoque estratégico en negocios internacionales y comercio exterior. Nuestra misión es brindar acompañamiento experto a empresas, pymes, profesionales y estudiantes que buscan ampliar su visión global, optimizar sus operaciones y fortalecer su competitividad en mercados internacionales.</p>
         </div>
     </section>
 
-    <section class="servicios">
+    <section id="servicios" class="section alt">
         <div class="container">
             <h2>Servicios</h2>
-            <ul>
-                <li>Consultoría y asesoría especializada</li>
-                <li>Charlas y conferencias inspiradoras</li>
-                <li>Masterclasses personalizadas</li>
-                <li>Cursos prácticos y aplicados</li>
-            </ul>
+            <div class="grid">
+                <div class="card">Consultoría y asesoría especializada</div>
+                <div class="card">Charlas y conferencias inspiradoras</div>
+                <div class="card">Masterclasses personalizadas</div>
+                <div class="card">Cursos prácticos y aplicados</div>
+            </div>
         </div>
     </section>
 
-    <section class="tematicas">
+    <section id="tematicas" class="section">
         <div class="container">
             <h2>Temáticas Clave</h2>
-            <ul>
+            <ul class="topics">
                 <li>Estrategia y gestión de negocios internacionales</li>
                 <li>Comercio exterior para pymes y grandes empresas</li>
                 <li>Logística internacional, cadena de suministro y gestión de contenedores</li>
@@ -53,10 +62,15 @@
         </div>
     </section>
 
-    <footer>
+    <section id="contacto" class="section alt">
         <div class="container">
-            <p>&copy; 2025 HELUSKY INTERNATIONAL. Todos los derechos reservados.</p>
+            <h2>Contacto</h2>
+            <p>¿Tienes un proyecto en mente? Muy pronto podrás contactarnos desde aquí.</p>
         </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 HELUSKY INTERNATIONAL</p>
     </footer>
 </body>
 </html>
